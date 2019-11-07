@@ -13,7 +13,7 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 public class ExcelUtil {
 	
-	public static String TEST_DATA_SHEET_PATH= "/Users/sandeepnegi/eclipse-workspace/Splashmath DemoProject/src/main/java/com/qa/splashmath/testData/ParentLogin.xls";
+	public static String TEST_DATA_SHEET_PATH= "/Users/sandeepnegi/eclipse-workspace/SplashmathDemoProject11/src/main/java/com/qa/splashmath/testData/ParentLogin.xls";
 	
 	public static Workbook book;
 	public static Sheet sheet;

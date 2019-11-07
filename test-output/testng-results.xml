@@ -1,109 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="9" total="13" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="52315" started-at="2019-11-06T17:37:02 IST" finished-at="2019-11-06T17:37:55 IST">
+  <suite name="Default suite" duration-ms="12905" started-at="2019-11-07T09:02:39Z" finished-at="2019-11-07T09:02:52Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="52315" started-at="2019-11-06T17:37:02 IST" finished-at="2019-11-06T17:37:55 IST">
-      <class name="com.qa.splashmath.tests.HomeLoginPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.splashmath.tests.HomeLoginPageTest@1c3a4799]" name="setUp" is-config="true" duration-ms="12694" started-at="2019-11-06T17:37:03 IST" finished-at="2019-11-06T17:37:16 IST">
+    <test name="Default test" duration-ms="12905" started-at="2019-11-07T09:02:39Z" finished-at="2019-11-07T09:02:52Z">
+      <class name="com.qa.splashmath.tests.SignInPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.splashmath.tests.SignInPageTest@5622fdf]" name="setUp" is-config="true" duration-ms="11880" started-at="2019-11-07T09:02:39Z" finished-at="2019-11-07T09:02:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyUserLogin(java.lang.String, java.lang.String)[pri:0, instance:com.qa.splashmath.tests.HomeLoginPageTest@1c3a4799]" name="verifyUserLogin" duration-ms="568" started-at="2019-11-06T17:37:16 IST" data-provider="getLogintTestData" finished-at="2019-11-06T17:37:16 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[sn+0508083219@splashmath.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123456.0]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="verifyClassLoginIconTest()[pri:0, instance:com.qa.splashmath.tests.SignInPageTest@5622fdf]" name="verifyClassLoginIconTest" duration-ms="655" started-at="2019-11-07T09:02:51Z" finished-at="2019-11-07T09:02:52Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyUserLogin -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.splashmath.tests.HomeLoginPageTest@1c3a4799]" name="tearDown" is-config="true" duration-ms="120" started-at="2019-11-06T17:37:16 IST" finished-at="2019-11-06T17:37:16 IST">
+        </test-method> <!-- verifyClassLoginIconTest -->
+        <test-method status="PASS" signature="verifyCloseSignInPageIconTest()[pri:0, instance:com.qa.splashmath.tests.SignInPageTest@5622fdf]" name="verifyCloseSignInPageIconTest" duration-ms="36" started-at="2019-11-07T09:02:52Z" finished-at="2019-11-07T09:02:52Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.splashmath.tests.HomeLoginPageTest@1c3a4799]" name="setUp" is-config="true" duration-ms="10781" started-at="2019-11-06T17:37:16 IST" finished-at="2019-11-06T17:37:27 IST">
+        </test-method> <!-- verifyCloseSignInPageIconTest -->
+        <test-method status="PASS" signature="verifyHomeLoginIconTest()[pri:0, instance:com.qa.splashmath.tests.SignInPageTest@5622fdf]" name="verifyHomeLoginIconTest" duration-ms="45" started-at="2019-11-07T09:02:52Z" finished-at="2019-11-07T09:02:52Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyUserLogin(java.lang.String, java.lang.String)[pri:0, instance:com.qa.splashmath.tests.HomeLoginPageTest@1c3a4799]" name="verifyUserLogin" duration-ms="584" started-at="2019-11-06T17:37:27 IST" data-provider="getLogintTestData" finished-at="2019-11-06T17:37:28 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[sn+parentemail010@splashmath.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123456.0]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- verifyHomeLoginIconTest -->
+        <test-method status="PASS" signature="verifySignInPageHeaderTest()[pri:0, instance:com.qa.splashmath.tests.SignInPageTest@5622fdf]" name="verifySignInPageHeaderTest" duration-ms="36" started-at="2019-11-07T09:02:52Z" finished-at="2019-11-07T09:02:52Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyUserLogin -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.splashmath.tests.HomeLoginPageTest@1c3a4799]" name="tearDown" is-config="true" duration-ms="125" started-at="2019-11-06T17:37:28 IST" finished-at="2019-11-06T17:37:28 IST">
+        </test-method> <!-- verifySignInPageHeaderTest -->
+        <test-method status="PASS" signature="verifySplashmathLogoTest()[pri:0, instance:com.qa.splashmath.tests.SignInPageTest@5622fdf]" name="verifySplashmathLogoTest" duration-ms="32" started-at="2019-11-07T09:02:52Z" finished-at="2019-11-07T09:02:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySplashmathLogoTest -->
+        <test-method status="PASS" signature="verifyTeacherParentSignInLinkTest()[pri:0, instance:com.qa.splashmath.tests.SignInPageTest@5622fdf]" name="verifyTeacherParentSignInLinkTest" duration-ms="64" started-at="2019-11-07T09:02:52Z" finished-at="2019-11-07T09:02:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTeacherParentSignInLinkTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.splashmath.tests.SignInPageTest@5622fdf]" name="tearDown" is-config="true" duration-ms="130" started-at="2019-11-07T09:02:52Z" finished-at="2019-11-07T09:02:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.splashmath.tests.HomeLoginPageTest@1c3a4799]" name="setUp" is-config="true" duration-ms="13606" started-at="2019-11-06T17:37:28 IST" finished-at="2019-11-06T17:37:41 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyUserLogin(java.lang.String, java.lang.String)[pri:0, instance:com.qa.splashmath.tests.HomeLoginPageTest@1c3a4799]" name="verifyUserLogin" duration-ms="477" started-at="2019-11-06T17:37:41 IST" data-provider="getLogintTestData" finished-at="2019-11-06T17:37:42 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[sn+asd01@splashmath.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123456.0]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUserLogin -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.splashmath.tests.HomeLoginPageTest@1c3a4799]" name="tearDown" is-config="true" duration-ms="124" started-at="2019-11-06T17:37:42 IST" finished-at="2019-11-06T17:37:42 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.splashmath.tests.HomeLoginPageTest@1c3a4799]" name="setUp" is-config="true" duration-ms="12058" started-at="2019-11-06T17:37:42 IST" finished-at="2019-11-06T17:37:54 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyUserLogin(java.lang.String, java.lang.String)[pri:0, instance:com.qa.splashmath.tests.HomeLoginPageTest@1c3a4799]" name="verifyUserLogin" duration-ms="525" started-at="2019-11-06T17:37:54 IST" data-provider="getLogintTestData" finished-at="2019-11-06T17:37:54 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[sn+aphn22@splashmath.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123456.0]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUserLogin -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.splashmath.tests.HomeLoginPageTest@1c3a4799]" name="tearDown" is-config="true" duration-ms="119" started-at="2019-11-06T17:37:54 IST" finished-at="2019-11-06T17:37:55 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.splashmath.tests.HomeLoginPageTest -->
+      </class> <!-- com.qa.splashmath.tests.SignInPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

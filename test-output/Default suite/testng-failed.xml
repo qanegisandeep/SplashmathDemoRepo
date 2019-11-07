@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.splashmath.tests.HomeLoginPageTest">
+      <class name="com.qa.splashmath.tests.LandingPageTest">
         <methods>
-          <include name="verifySplashmathLogoTest"/>
           <include name="setUp"/>
+          <include name="verifyParentSignUpForFreeButtonPresentTest"/>
+          <include name="verifySignInButtonPresentTest"/>
           <include name="tearDown"/>
+          <include name="verifyCaseStudiesLinkPresentTest"/>
+          <include name="verifySplashmathLogoPresentTest"/>
+          <include name="verifyTeacherSignUpForFreeButtonPresentTest"/>
+          <include name="verifyLandingPageTitleTest"/>
+          <include name="verifyFeatureAndPlansLinkPresentTest"/>
+          <include name="verifyCurriculumLinkPresentTest"/>
         </methods>
-      </class> <!-- com.qa.splashmath.tests.HomeLoginPageTest -->
+      </class> <!-- com.qa.splashmath.tests.LandingPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -42,7 +42,7 @@ public class BasePage {
 	public Properties init_properties() {
 		prop = new Properties();
 		try {
-			FileInputStream ip = new FileInputStream("/Users/sandeepnegi/eclipse-workspace/Splashmath DemoProject/src/main/java/com/qa/splashmath/config/config.properties");
+			FileInputStream ip = new FileInputStream("/Users/sandeepnegi/eclipse-workspace/SplashmathDemoProject11/src/main/java/com/qa/splashmath/config/config.properties");
 			prop.load(ip);
 		}catch (FileNotFoundException e) {
 			System.out.println("Config file missing");
