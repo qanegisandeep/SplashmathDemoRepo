@@ -44,7 +44,8 @@ public class Constants {
 	public static final String MATH_FACTS_PAGE_HEADER= "Math Fact Practice (Pick any operator to play)";
 	public static final String MATH_FACTS_PAGE_TITLE ="Math Facts Games - Addition, Subtraction, Multiplication";
 	
-	public static final String PLAY_GRADE_ONE_SKILL= "Make a Ten";
+	// Grade One skill to play by Guest user
+	public static final String PLAY_GRADE_ONE_SKILL= "Double Facts within 10";
 	
 	
 

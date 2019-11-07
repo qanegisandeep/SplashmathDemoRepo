@@ -24,10 +24,12 @@ public class CurriculumPage extends BasePage{
 	public CurriculumPage(WebDriver driver) {
 		this.driver = driver;
 		elementUtility = new ElementUtility(driver);
+		elementUtility.waitForElementPresent(viewAllSkills, 20);
 		
 	}
 	
 	public void clickViewAllLink() {
+		elementUtility.waitForElementVisible(viewAllSkills, 20);
 		elementUtility.doClick(viewAllSkills);
 	}
 	
@@ -40,11 +42,14 @@ public class CurriculumPage extends BasePage{
 	}
 	
 	public void clickGradeOne() {
-		elementUtility.doClick(gradeOne);
+		elementUtility.waitForTextPresent(gradeOne, 20);
+		elementUtility.doActionClick(gradeOne);
 	}
 	
-	public void goToGradeOnePage() {
+	public GradeOnePage goToGradeOnePage() {
+		clickGradeOne();
 		clickViewAllLink();
+		return new GradeOnePage(driver);
 	}
 	
 	public void clickGradeTwo() {
