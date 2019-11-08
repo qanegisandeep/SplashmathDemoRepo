@@ -40,7 +40,9 @@ public class GradeOnePage extends BasePage{
 		return elementUtility.isElementVisible(teacherSignUpLink);
 	}
 
-	
+	/**
+	 * Currently this logic is not working [Figuring it out and will update] 
+	 */
 	public void guestUserPlaysGames() {
 		getSkillToPlay();	
 		elementUtility.waitForFrameAndSwitchToIt(questionFrame,15);
