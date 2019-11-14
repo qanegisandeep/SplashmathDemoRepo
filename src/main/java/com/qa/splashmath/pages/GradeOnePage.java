@@ -23,6 +23,9 @@ public class GradeOnePage extends BasePage{
 	By showFullCurriculum = By.xpath("//a[text()='Show full curriculum']//parent::div[@class='curriculum-state-btn js-show-curriculum']");
 	By hippoLoader = By.xpath("//div[text()='Loading...']");
 	
+	By mathFactsIcon = By.xpath("//h4[text()='Math Facts']");
+	
+	
 	public GradeOnePage(WebDriver driver) {
 		this.driver = driver;
 		elementUtility = new ElementUtility(driver);
@@ -53,6 +56,16 @@ public class GradeOnePage extends BasePage{
 	public void getSkillToPlay() {
 		elementUtility.doClick(skillName);
 		System.out.println("clicked skill" + skillName);
+	}
+	
+	public void clickMathFactsIcon() {
+		elementUtility.waitForElementVisible(mathFactsIcon, 15);
+		elementUtility.doClick(mathFactsIcon);
+	}
+	
+	public MathFactsPage goToMathFactsPage() {
+		clickMathFactsIcon();
+		return new MathFactsPage(driver);
 	}
 	
 	

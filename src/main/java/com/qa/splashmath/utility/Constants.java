@@ -47,6 +47,9 @@ public class Constants {
 	// Grade One skill to play by Guest user
 	public static final String PLAY_GRADE_ONE_SKILL= "Double Facts within 10";
 	
+	// Math Facts Question limit on Logged out Page for Guest User
+	
+	public static final int QUESTION_LIMIT = 5;
 	
 
 }
