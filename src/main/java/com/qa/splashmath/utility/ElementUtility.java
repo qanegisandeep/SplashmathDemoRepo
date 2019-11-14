@@ -1,5 +1,7 @@
 package com.qa.splashmath.utility;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -52,11 +54,8 @@ public class ElementUtility {
 			}catch(Exception e) {
 				System.out.println(e.getMessage());
 			}
-		}	
-		
-	}
-	
-
+		}		
+	}	
 	public void waitForElementToBeClickable(By locator, int time) {
 		WebDriverWait wait = new WebDriverWait(driver,time);
 		wait.until(ExpectedConditions.elementToBeClickable(locator));
@@ -86,18 +85,20 @@ public class ElementUtility {
 	
 	public void waitForElementVisible(By locator, int time) {
 		WebDriverWait wait = new WebDriverWait(driver, time);
+		System.out.println(System.currentTimeMillis());
 		wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
-		
-		
 	}
+	
+	public void waitForElementStaleness(By locator, int time) {
+		WebDriverWait wait = new WebDriverWait(driver, time);
+		wait.until(ExpectedConditions.stalenessOf(getElement(locator)));
+	}
+	
 	
 	public void waitForFrameAndSwitchToIt(By locator, int time) {
 		WebDriverWait wait = new WebDriverWait(driver, time);
-		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(locator));
-		
-	}
-	
-	
+		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(locator));		
+	}	
 	public String getPageTitle() {
 		try {
 			return driver.getTitle();
@@ -114,16 +115,14 @@ public class ElementUtility {
 			System.out.println(e.getMessage());
 			return null;
 		}
-	}
-	
+	}	
 	public boolean isElementVisible(By locator) {
 		try {
 			return getElement(locator).isDisplayed();
 		}catch(Exception e) {
 			System.out.println(e.getMessage());
 			return false;
-		}
-		
+		}		
 	}
 	
 	public void clickUsingJavaScriptExecutor(By locator) {
@@ -136,8 +135,39 @@ public class ElementUtility {
 		waitForElementVisible(problemAttempt, 20);
 		clickUsingJavaScriptExecutor(problemAttempt);
 		waitForElementVisible(next, 15);
-		doActionClick(next);
+		doActionClick(next);	
+	}
+	
+	public void playMathFactGame(By answerSymbol, By selectOption, int questionCount) {
+		//System.out.println("Element visible : " +answerSymbol);
 		
+		waitForElementVisible(selectOption, 20);
+		System.out.println(getText(selectOption));
+		
+		System.out.println("Element visible : " +selectOption);
+		for(int i =0; i< questionCount; i++) {
+			try {				
+				if(isElementVisible(selectOption)) {
+					waitForElementVisible(selectOption, 20);
+					doActionClick(selectOption);
+					waitForElementVisible(answerSymbol, 5);
+				}	
+			}catch(Exception e) {
+				System.out.println("No click: "+ e.getMessage());
+			}
+		//	waitForElementToInvisible(answerSymbol, 5);
+		}
+	}
+	
+	public void isElementPresent(By locator) {
+		Actions actions = new Actions(driver);
+		
+		List<WebElement> element = driver.findElements(locator);
+		System.out.println("Element size = " + element.size());
+		if(element.size()>0) {
+			actions.moveToElement(element.get(0)).click().build().perform();						
+			//driver.find(By.id(""));
+		}
 	}
 
 }

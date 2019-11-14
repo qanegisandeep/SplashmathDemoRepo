@@ -31,8 +31,7 @@ public class LandingPageTest {
 		driver.manage().window().fullscreen();
 		driver.manage().deleteAllCookies();
 		
-		landingPage = new LandingPage(driver);
-		
+		landingPage = new LandingPage(driver);		
 	}
 	
 	@Test

@@ -26,8 +26,9 @@ public class LandingPage extends BasePage{
 	By teacherSignUpForFreeButton = By.linkText("Teachers, Sign Up for Free");
 	
 	By splashmathLogo = By.xpath("//a[@class='logo pull-left']/img");
-	
-	
+	By hotjarNoThanksRadioButton = By.xpath("//div[contains(@data-index,'1')]");
+	By hotjarNextButton = By.id("_hj-f5b2a1eb-9b07_action_submit");
+	By cancelConsentOption = By.xpath("//div[@class='_hj-f5b2a1eb-9b07_consent_actions']/button[1]");
 	public String getLandingPageTitle() {
 		return elementUtility.getPageTitle();
 	}
@@ -95,8 +96,6 @@ public class LandingPage extends BasePage{
 		
 	}
 	
-	
-	
 	public void clickOnCaseStudiesLink() {
 		elementUtility.waitForElementPresent(caseStudiesLink, 10);
 		elementUtility.doClick(caseStudiesLink);
@@ -112,9 +111,15 @@ public class LandingPage extends BasePage{
 	}
 	public void clickCurriculum() {
 		elementUtility.waitForElementPresent(curriculumLink, 10);
-		elementUtility.doClick(curriculumLink);
+		elementUtility.doActionClick(curriculumLink);	
 	}
 	
+	public void clickOnHotjarBot() {
+		elementUtility.waitForElementVisible(hotjarNextButton, 20);
+		elementUtility.doClick(hotjarNoThanksRadioButton);
+		elementUtility.doClick(hotjarNextButton);
+		elementUtility.doClick(cancelConsentOption);
+	}
 	public CurriculumPage goToCurriculumPage() {
 		clickCurriculum();
 		return new CurriculumPage(driver);
