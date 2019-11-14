@@ -9,11 +9,15 @@
  
   <test name="Splashmath Demo Test">
     <classes>
-    	<class name="com.qa.splashmath.tests.MathFactsPageTest"/>
     	<class name="com.qa.splashmath.tests.LandingPageTest"/>
+    	<class name="com.qa.splashmath.tests.ParentSignUpPageTest"/>
+    	<class name="com.qa.splashmath.tests.SignInPageTest"/>
+    	<class name="com.qa.splashmath.tests.HomeLoginPageTest"/>
+      <class name="com.qa.splashmath.tests.CaseStudiesPageTest"/>
     </classes>
     	
       <!-- <class name="com.qa.splashmath.tests.ParentSignUpPageTest"/>
+      <class name="com.qa.splashmath.tests.MathFactsPageTest"/>
       <class name="com.qa.splashmath.tests.SignInPageTest"/>
       <class name="com.qa.splashmath.tests.HomeLoginPageTest"/>
       <class name="com.qa.splashmath.tests.CaseStudiesPageTest"/>
