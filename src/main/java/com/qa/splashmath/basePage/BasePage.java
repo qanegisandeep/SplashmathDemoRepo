@@ -28,12 +28,8 @@ public class BasePage {
 	public WebDriver init_driver(String browserName) {
 		
 		if(browserName.equalsIgnoreCase("chrome")) {
-			//WebDriverManager.chromedriver().setup();
+			WebDriverManager.chromedriver().setup();
 			//driver = new ChromeDriver();
-			//tldriver.set(new ChromeDriver());
-	
-		// Added to run via jenkins	
-			WebDriverManager.chromedriver().operatingSystem(OperatingSystem.LINUX).setup();
 			tldriver.set(new ChromeDriver());
 			
 		}
